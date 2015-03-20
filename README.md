@@ -1,6 +1,6 @@
 # deAMDify2
 
-Forked from (deAMDify)[https://github.com/jaredhanson/deamdify].
+Forked from [deAMDify](https://github.com/jaredhanson/deamdify).
 
 This module is a [browserify](http://browserify.org/) plugin that will transform
 [AMD](https://github.com/amdjs) modules into [Node.js](http://nodejs.org/)-style
