@@ -12,16 +12,16 @@ the resulting bundle can be used without the need for a separate loader such as
 
 ## Install
 
-    $ npm install deamdify
+    $ npm install deamdify2
 
 ## Usage
 
 #### Command Line
 
 Bundle up all required modules, including AMD modules, into a single file
-using `browserify` with the `deamdify` transform.
+using `browserify` with the `deamdify2` transform.
 
-    browserify -t deamdify main.js -o bundle.js
+    browserify -t deamdify2 main.js -o bundle.js
 
 #### API
 
@@ -30,7 +30,7 @@ var browserify = require('browserify');
 var fs = require('fs');
 
 var b = browserify('main.js');
-b.transform('deamdify');
+b.transform('deamdify2');
 
 b.bundle().pipe(fs.createWriteStream('bundle.js'));
 ```
@@ -46,7 +46,7 @@ package as it builds a bundle.
   "name": "anchor",
   "main": "main",
   "browserify": {
-    "transform": "deamdify"
+    "transform": "deamdify2"
   }
 }
 ```
@@ -54,9 +54,7 @@ package as it builds a bundle.
 ## Tests
 
     $ npm install
-    $ make test
-
-[![Build Status](https://secure.travis-ci.org/jaredhanson/deamdify.png)](http://travis-ci.org/jaredhanson/deamdify)  [![David DM](https://david-dm.org/jaredhanson/deamdify.png)](http://david-dm.org/jaredhanson/deamdify)
+    $ npm test
 
 ## Credits
 
@@ -67,3 +65,4 @@ package as it builds a bundle.
 [The MIT License](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Copyright (c) 2015 Jamund Ferguson
