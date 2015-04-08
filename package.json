@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git://github.com/5to6/deamdify2.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  },
   "bugs": {
     "url": "https://github.com/5to6/deamdify2/issues"
   },
